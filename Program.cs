@@ -84,33 +84,33 @@
 //     Console.WriteLine(i);
 // }
 
-// int secret = 42;
-// int attempts = 5;
-// bool guessed = false;
+int secret = 42;
+int attempts = 5;
+bool guessed = false;
 
-// for (int i = 1; i <= attempts; i++)
-// {
-//     Console.Write($"Попытка {i}/{attempts}. Введите число: ");
-//     int guess = int.Parse(Console.ReadLine()!);
+for (int i = 1; i <= attempts; i++)
+{
+    Console.Write($"Попытка {i}/{attempts}. Введите число: ");
+    int guess = int.Parse(Console.ReadLine()!);
 
-//     if (guess == secret)
-//     {
-//         Console.WriteLine($"Победа! Попыток: {i}");
-//         guessed = true;
-//         break;
-//     }
-//     else if (guess < secret)
-//     {
-//         Console.WriteLine("Больше");
-//     }
-//     else
-//     {
-//         Console.WriteLine("Меньше");
-//     }
-// }
+    if (guess == secret)
+    {
+        Console.WriteLine($"Победа! Попыток: {i}");
+        guessed = true;
+        break;
+    }
+    else if (guess < secret)
+    {
+        Console.WriteLine("Больше");
+    }
+    else
+    {
+        Console.WriteLine("Меньше");
+    }
+}
 
-// if (!guessed)
-// {
-//     Console.WriteLine($"Вы проиграли, число было {secret}");
-// }
+if (!guessed)
+{
+    Console.WriteLine($"Вы проиграли, число было {secret}");
+}
 
